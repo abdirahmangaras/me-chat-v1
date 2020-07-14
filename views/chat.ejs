@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <title>Me-Chat V1</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="card" >
+        <div class="header row card-panel  light-blue accent-4  ">
+          <i class="fas fa-comment-alt"></i> ME CHAT
+        </div>
+      </div>
+
+      <div class="box " style=" padding: 2%; margin-top: -1.4%; margin-bottom: -5.5%; padding-bottom:  55%;">
+
+      <% for(var i=0; i<see.length; i++){ %>
+        <div class="item ">
+         
+        <p class="yousend "> <%= see[i] %></p>
+    </div>
+   <%  } %>
+   
+   
+   <!-- <div class="item ">
+         
+    <!-- <p class="yousend right" style="background-color: #0078FF;"> Saxibow ha igu adkeen ee ii soo sheeg qaabka lacag ugu sameyso Youtube-ka?
+    </p> -->
+</div> 
+</div>
+
+      <form action="/" method="POST" class="row">
+        <input type="text" name="sendText" placeholder="Message" class="col s12 "  style=" margin-top: 2%; background: rgb(145, 140, 140); color: #fff; border-radius: 20px; padding-left: 20px;"/>
+        <button type="submit" name="submit" class="right col s4" style="color: #fff;
+        width: 100px;
+        height: 50px;
+        border: none;
+        border-radius: 40px;
+        background: #0084ff; margin-top: 2%;
+        cursor: pointer;" >
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
